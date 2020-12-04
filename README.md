@@ -25,4 +25,28 @@ echo $(date +"%Y-%m-%d %T")
 2020-12-04 15:57:09
 ```
 
+## C 语言
+
+hello.c： 
+
+```
+#include <stdio.h>
+ 
+int main()
+{
+    /* 我的第一个 C 程序 */
+    printf("Hello, World! \n");
+ 
+    return 0;
+}
+```
+
+
+```
+$ clang hello.c && ./a.out
+Hello, World! 
+
+$ gcc hello.c && ./a.out
+Hello, World! 
+```
 
