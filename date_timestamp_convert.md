@@ -29,7 +29,7 @@ console.log(time);
 php:
 
 time() - Return current Unix timestamp 返回当前Unix时间戳  
-strtotime() - 将任何英文文本的日期时间描述解析为Unix时间戳
+strtotime() - 将任何英文文本的日期时间描述解析为Unix时间戳  
 date() — Format a local time/date Format a local time/date 格式化本地时间/日期  
 date_default_timezone_set() — Sets the default timezone 设置默认时区  
 
