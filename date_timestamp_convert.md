@@ -1,16 +1,22 @@
 # 时间转换
 
 Unix时间戳，是从1970年1月1日（UTC/GMT的午夜）开始所经过的秒数，不考虑闰秒。
+协调世界时UTC，又称世界统一时间、世界标准时间、国际协调时间。
 
-时间戳格式： 1606986993  (当前)
-基本时间格式： YYYY-MM-DD HH:mm:ss 
+YYYY-MM-DD HH:mm:ss   
+YYYY-MM-DDTHH:mm:ss.sssZ 
+
+基本时间格式： 2020-12-04 18:53:33    
+UTC时间格式： 2020-12-04T10:53:33.776Z  (ISO-8601)
+Unix时间戳格式： 1606986993  (当前为10位数字)  
 
 
-Unix时间戳，是从1970年1月1日（UTC/GMT的午夜）开始所经过的秒数，不考虑闰秒。
 
 ## javascript:
 
 js 使用 `new Date().getTime()`获取时间戳，返回值的单位是毫秒。
+
+ ISO-8601 ，格式为: YYYY-MM-DDTHH:mm:ss.sssZ
 
 浏览器 console:
 
