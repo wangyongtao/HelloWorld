@@ -14,7 +14,7 @@ Fri Dec 04 2020 16:55:33 GMT+0800 (中国标准时间)
 >
 > new Date().getTime();
 1607072122381
-> parseInt(new Date().getTime().toString() / 1000)
+> parseInt(new Date().getTime() / 1000)
 1607072254
 ```
 
@@ -51,6 +51,8 @@ $dateTime3 = date('Ymd', $time); // 20201204
 将基本时间转成时间戳：
 
 ```php
+// 获取时间戳
+$time = time();
 // 指定时间转成时间戳
 $timestamp1 = strtotime('2020-12-04 08:52:36');
 // 更加指定的英文描述获取时间戳
@@ -59,7 +61,7 @@ $timestamp3 = strtotime('-1 day'); // 获取一天前的时间戳
 $timestamp4 = strtotime('+2 weeks'); // 获取2周后的时间戳
 $timestamp5 = strtotime('-2 weeks');  // 获取2周前的时间戳
 $timestamp6 = strtotime('+3 months'); // 获取3个月后的时间戳
-$timestamp7 = strtotime('-3 months');  // 获取3个前的时间戳
+$timestamp7 = strtotime('-3 months');  // 获取3个月前的时间戳
 ```
 
 ```
