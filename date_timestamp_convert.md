@@ -1,6 +1,7 @@
 # 时间转换
 
-javascript:
+
+## javascript:
 
 js 使用 `new Date().getTime()`获取时间戳，返回值的单位是毫秒。
 
@@ -26,7 +27,7 @@ console.log(time);
 
 
 
-php:
+## php:
 
 time() - Return current Unix timestamp 返回当前Unix时间戳  
 strtotime() - 将任何英文文本的日期时间描述解析为Unix时间戳  
@@ -47,8 +48,41 @@ $dateTime2 = date('Y-m-d', $time); // 2020-12-04
 $dateTime3 = date('Ymd', $time); // 20201204
 ```
 
+将基本时间转成时间戳：
 
-mysql:
+```php
+// 指定时间转成时间戳
+$timestamp1 = strtotime('2020-12-04 08:52:36');
+// 更加指定的英文描述获取时间戳
+$timestamp2 = strtotime('+1 day'); // 获取一天后的时间戳 
+$timestamp3 = strtotime('-1 day'); // 获取一天前的时间戳 
+$timestamp4 = strtotime('+2 weeks'); // 获取2周后的时间戳
+$timestamp5 = strtotime('-2 weeks');  // 获取2周前的时间戳
+$timestamp6 = strtotime('+3 months'); // 获取3个月后的时间戳
+$timestamp7 = strtotime('-3 months');  // 获取3个前的时间戳
+```
+
+```
+$php -a 
+php > echo strtotime("+1 day");
+1607159776
+php > echo strtotime("+1 week");
+1607678182
+php > echo strtotime("+1 month");
+1609751787
+php > echo strtotime("-1 day");
+1606986993
+php > echo strtotime("-1 week");
+1606468596
+php > echo strtotime("-1 month");
+1604481406
+php > echo strtotime('2020-12-04 08:52:36');
+1607071956
+```
+
+
+
+## mysql:
 
 ```sql
 -- 获取时间戳
