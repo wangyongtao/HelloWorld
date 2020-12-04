@@ -8,4 +8,21 @@ JavaScript
 jQuery
 
 
-hello world program
+## Shell 
+
+Shell echo 命令：输出字符串
+
+```
+sh-3.2$ bash
+
+bash-5.0$ echo "Hello World!"
+Hello World!
+
+bash-5.0$ echo $(date)
+2020年12月 4日 星期五 15时57分17秒 CST
+
+echo $(date +"%Y-%m-%d %T")
+2020-12-04 15:57:09
+```
+
+
