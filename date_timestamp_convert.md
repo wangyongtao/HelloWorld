@@ -25,6 +25,11 @@ const time = parseInt(new Date().getTime().toString() / 1000);
 console.log(time);
 ```
 
+为了方便日期操作，请使用 Day.js (dayjs):  
+
+```
+npm install dayjs
+```
 
 
 ## php:
