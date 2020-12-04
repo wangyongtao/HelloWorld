@@ -19,19 +19,28 @@ ISO-8601:
 
 js 使用 `new Date().getTime()`获取时间戳，返回值的单位是毫秒。
 
- ISO-8601 ，格式为: YYYY-MM-DDTHH:mm:ss.sssZ
+ISO-8601 ，格式为: YYYY-MM-DDTHH:mm:ss.sssZ，比如 "2020-12-04T11:12:22.018Z" 。
 
 浏览器 console:
 
 ```sh
->
-> new Date()
-Fri Dec 04 2020 16:55:33 GMT+0800 (中国标准时间)
->
 > new Date().getTime();
 1607072122381
+
 > parseInt(new Date().getTime() / 1000)
 1607072254
+
+> new Date().toString()
+"Fri Dec 04 2020 19:12:05 GMT+0800 (中国标准时间)"
+
+> new Date().toUTCString()
+"Fri, 04 Dec 2020 11:12:11 GMT"
+
+> new Date().toISOString()
+"2020-12-04T11:12:22.018Z"
+
+> new Date().toGMTString()
+"Fri, 04 Dec 2020 11:12:27 GMT"
 ```
 
 js代码：
