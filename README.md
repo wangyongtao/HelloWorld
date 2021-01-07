@@ -24,7 +24,7 @@ Sublime Text 3
 
 ## [Shell](shell/README.md)
 
-Shell echo 命令：输出字符串
+输出字符串 echo : display a message 
 
 ```
 sh-3.2$ bash
@@ -33,10 +33,10 @@ bash-5.0$ echo "Hello World!"
 Hello World!
 
 bash-5.0$ echo $(date)
-2020年12月 4日 星期五 15时57分17秒 CST
+2021年 1月 7日 星期四 14时30分59秒 CST
 
-echo $(date +"%Y-%m-%d %T")
-2020-12-04 15:57:09
+bash-5.0$ echo $(date +"%Y-%m-%d %T")
+2021-01-07 14:31:04
 ```
 
 ## [C 语言](c/README.md)
