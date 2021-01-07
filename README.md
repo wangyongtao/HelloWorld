@@ -97,7 +97,7 @@ create file `main.go` :
 package main
 
 import (
-	"fmt"
+    "fmt"
 )
 
 func main() {
@@ -108,7 +108,8 @@ func main() {
 compile and run:
 
 ```sh
-$ go run main.go
+$ go run main.go 
+Hello, World!
 ```
 
 
@@ -139,7 +140,6 @@ On Windows:
 > .\main.exe
 Hello, world!
 ```
-
 
 -END-
 
