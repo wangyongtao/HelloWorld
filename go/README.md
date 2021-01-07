@@ -45,5 +45,6 @@ compile and run:
 
 ```sh
 $ go run main.go
+Hello, World!
 ```
 
