@@ -9,11 +9,18 @@ jQuery
 
 ## 开发工具 Developer Tools
 
-[PhpStorm](https://www.jetbrains.com/phpstorm/)   
-[IntelliJ IDEA](https://www.jetbrains.com/idea/)  
-[Eclipse IDE](https://www.eclipse.org/downloads/)  
-Visual Studio Code    
-Sublime Text 3   
+[PhpStorm](https://www.jetbrains.com/phpstorm/) (php)
+
+[IntelliJ IDEA](https://www.jetbrains.com/idea/) (java)
+
+[GoLand](https://www.jetbrains.com/go/) (golang)
+
+[Eclipse IDE](https://www.eclipse.org/downloads/) 
+
+Visual Studio Code
+
+Sublime Text 3
+
 
 ## [Shell](shell/README.md)
 
@@ -34,7 +41,7 @@ echo $(date +"%Y-%m-%d %T")
 
 ## [C 语言](c/README.md)
 
-hello.c： 
+create file `hello.c`： 
 
 ```
 #include <stdio.h>
@@ -48,6 +55,7 @@ int main()
 }
 ```
 
+compile and run:
 
 ```
 $ clang hello.c && ./a.out
@@ -59,7 +67,7 @@ Hello, World!
 
 ## [PHP](php/README.md)
 
-Filename `index.php`:
+create file `index.php`:
 
 ```
 <?php
@@ -73,15 +81,40 @@ echo $str . "\n";
 var_dump($str);
 ```
 
+Run the code in terminal : 
+
 ```sh
 $ php index.php 
 Hello, World!
 string(13) "Hello, World!"
 ```
 
+## [Go](go/README.md)
+
+create file `main.go` :
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+    fmt.Println("Hello, World!")
+}
+```
+
+compile and run:
+
+```sh
+$ go run main.go
+```
+
+
 ## [Rust](rust/README.md)
 
-Filename: `main.rs` :
+create file : `main.rs` :
 
 ```rust
 fn main() {
