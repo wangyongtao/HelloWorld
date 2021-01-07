@@ -1,6 +1,17 @@
 PHP
 
-文件 filename `index.php`:
+Check version: 
+
+```sh
+$ php --version
+PHP 8.0.0 (cli) (built: Nov 30 2020 13:47:29) ( NTS )
+Copyright (c) The PHP Group
+Zend Engine v4.0.0-dev, Copyright (c) Zend Technologies
+    with Zend OPcache v8.0.0, Copyright (c), by Zend Technologies
+```
+
+
+Create file `index.php`:
 
 ```php
 <?php
@@ -15,10 +26,18 @@ var_dump($str);
 
 ```
 
-
+Run the code in Terminal: 
 
 ```
 $ php index.php 
 Hello, World!
 string(13) "Hello, World!"
 ```
+
+## References
+
+https://www.php.net/  
+
+https://www.jetbrains.com/phpstorm/
+
+-END-
