@@ -1,6 +1,6 @@
 clang
 
-Filename `hello.c`：
+create file `hello.c`：
 
 ```c
 #include <stdio.h>
@@ -14,7 +14,7 @@ int main()
 }
 ```
 
-编译器 gcc 与 clang :
+编译器 gcc vs clang :
 
 ```sh
 $ clang --version
