@@ -15,7 +15,7 @@ $ which go
 /usr/local/go/bin/go
 
 $ go version 
-go version go1.18 darwin/amd64
+go version go1.22.1 darwin/arm64
 ```
 
 
